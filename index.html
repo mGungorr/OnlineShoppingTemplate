@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ce87c3b88b.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Alışverişin Merkezi</title>
+</head>
+
+<body>
+    <nav>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a href="/" id="üye-ol">Üye Ol</a>
+                <a href="/" id="giris-yap">Giriş Yap</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="/" id="siparis-takip">SİPARİŞ TAKİP</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-items">
+            <div class="header-items-contents">
+                <div class="my-menu">
+                    <ul id="my-menu-list">
+                        <span onclick="openNav()"><i class="fas fa-bars fa-lg"></i></span>
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-top">
+                                <span>
+                                    <a href="">Logo</a>
+                                </span>
+                                <div id="overlay-search">
+                                    <button>
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="overlay-nav">
+                                <div class="overlar-nav-div"><i class="fas fa-user user-fontsize">
+                                </i>
+                                <button id="overlay-nav-üye-ol" style="background-color:rgb(244, 244, 244);">Üye Ol</button>
+                                <button id="overlay-nav-giris-yap" style="background-color:rgb(244, 244, 244);">Giriş Yap</button>
+                                </div>
+                                <span id="overlay-siparis-span">
+                                <i class="fas fa-truck"></i>
+                                <button id="orderlay-truck">SİPARİŞ TAKİP</button>
+                            </span>
+                            </div>
+                            <div class="overlay-content">
+                                <a href="#">Kadın</a>
+                                <a href="#">Erkek</a>
+                                <a href="#">Çocuk</a>
+                                <a href="#">Bebek</a>
+                                <a href="#">Home</a>
+                                <a href="#">Markalar</a>
+                                <a href="#" style="color: #CF0B63;">Outlet</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="my-logo">
+                    <a href="">Logo</a>
+                </div>
+                <div class="header-items-contents-right">
+                    <a href="" id="my-fav"><i class="far fa-heart"></i></a>
+                    <a href="" id="my-bag"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-items-tablet">
+            <div class="header-items-contents-tablet">
+                <div class="my-menu-tablet menu-open">
+                    <ul id="my-menu-list-tablet">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </ul>
+                    <div class="my-logo-tablet">
+                        <a href="">Logo</a>
+                    </div>
+                    <div class="my-search-tablet">
+                        <input type="search" placeholder="Aradığınız ürün">
+                        <div>
+                            <button><i id="my-search-tablet" class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-items-contents-right-tablet">
+                    <a href="" id="my-fav-tablet"><i class="far fa-heart"></i></a>
+                    <a href="" id="my-bag-tablet"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-items-web">
+            <div class="header-items-contents-web">
+                <div class="my-logo-web">
+                    <a href="">Logo</a>
+                </div>
+                <div class="my-search-web">
+                    <input type="search" placeholder="Aradığınız ürün">
+                    <div>
+                        <button><i id="my-search-web" class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-items-contents-right-web">
+                <div class="symbols-div">
+                    <a href="" id="my-user-web"><i class="far fa-user"></i></a>
+                    <a href="" class="symbols-text-web">Giriş Yap</a>
+                </div>
+                <div class="symbols-div">
+                    <a href="" id="my-fav-web"><i class="far fa-heart"></i></a>
+                    <a href="" class="symbols-text-web">Favori Listem</a>
+                </div>
+                <div class="symbols-div">
+                    <a href="" id="my-bag-web"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="" class="symbols-text-web">Sepetim</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <div class="my-container">
+        <div class="my-categories">
+            <ul id="my-menu-list">
+                <a href="">
+                    <li>
+                        Kadın
+                        <div class="nav-bar-items">
+                            <ul>
+                                <a href="">
+                                    <li>Tişört</li>
+                                </a>
+                                <a href="">
+                                    <li>Elbise</li>
+                                </a>
+                                <a href="">
+                                    <li>Pantolon</li>
+                                </a>
+                                <a href="">
+                                    <li>Tişört</li>
+                                </a>
+                                <a href="">
+                                    <li>Kazak</li>
+                                </a>
+                                <a href="">
+                                    <li>Hırka</li>
+                                </a>
+                                <a href="">
+                                    <li>Gömlek</li>
+                                </a>
+                                <a href="">
+                                    <li>Bluz</li>
+                                </a>
+                                <a href="">
+                                    <li>Etek</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </a>
+                <a href="">
+                    <li>Erkek
+                    </li>
+                </a>
+                <a href="">
+                    <li>Çocuk
+                    </li>
+                </a>
+                <a href="">
+                    <li>Bebek
+                    </li>
+                </a>
+                <a href="">
+                    <li>Home
+                    </li>
+                </a>
+                <a href="">
+                    <li>Markalar
+                    </li>
+                </a>
+                <a href="" style="color: #CF0B59;">
+                    <li>Outlet
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="my-search">
+            <input type="search" placeholder="Aradığınız ürün">
+            <div>
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <section id="my-mobile-banner-first">
+            <a href="">
+                <img src="./images/USTBANNER_MOBIL.jpg" alt="bannermobil">
+            </a>
+        </section>
+        <div class="section-images">
+            <section class="web-banner">
+                <a href="">
+                    <img src="./images/7.jpg" alt="bannermobil">
+                </a>
+            </section>
+            <section class="web-banner">
+                <a href="">
+                    <img src="./images/5.jpg" alt="bannermobil">
+                </a>
+            </section>
+        </div>
+        <section id="my-mobile-slider">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./images/2.jpg" alt="slider" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="./images/4.jpg" alt="slider" style="width:100%;">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
